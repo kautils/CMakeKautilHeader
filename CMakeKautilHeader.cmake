@@ -11,3 +11,8 @@ macro(git_clone url)
     include("${KAUTIL_THIRD_PARTY_DIR}/kautil_cmake/${file_name}")
     unset(file_name)
 endmacro()
+
+if(NOT ${BUILD_SHARED} STREQUAL "")
+    set(BUILD_SHARED ${BUILD_SHARED} CACHE STRING "build shared library" FORCE )
+endif()
+
