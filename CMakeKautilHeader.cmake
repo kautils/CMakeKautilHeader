@@ -12,7 +12,7 @@ macro(git_clone url)
     unset(file_name)
 endmacro()
 
-if(${BUILD_SHARED} EQUAL ON)
-    set(BUILD_SHARED TRUE CACHE STRING "build shared library. specify ON/OFF" FORCE )
+if(${BUILD_SHARED_LIBRARY})
+    set(BUILD_SHARED_LIBRARY TRUE CACHE STRING "build shared library. specify ON/OFF" FORCE )
 endif()
 
