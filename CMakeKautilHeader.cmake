@@ -3,7 +3,7 @@ if(NOT DEFINED KAUTIL_THIRD_PARTY_DIR)
     file(MAKE_DIRECTORY "${KAUTIL_THIRD_PARTY_DIR}")
 endif()
 
-macro(git_clone_test url)
+macro(git_clone url)
     get_filename_component(git_clone.file_name ${url} NAME)
     get_filename_component(git_clone.dir_name ${url} DIRECTORY)
     get_filename_component(git_clone.dir_name ${git_clone.dir_name} NAME)
